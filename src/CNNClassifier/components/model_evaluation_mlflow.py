@@ -3,8 +3,8 @@ from pathlib import Path
 import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
-from CNN_Classifier.entity.config_entity import EvaluationConfig
-from CNN_Classifier.utils.common import read_yaml, create_directories, save_json
+from CNNClassifier.entity.config_entity import EvaluationConfig
+from CNNClassifier.utils.common import read_yaml, create_directories, save_json
 
 
 class Evaluation:

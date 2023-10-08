@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "kidney_disease_classification_deeplearning"
 AUTHOR_USER_NAME = "slackroo"
-SRC_REPO = "CNN_Classifier"
+SRC_REPO = "CNNClassifier"
 AUTHOR_EMAIL = "sumanthomgowda@gmail.com"
 
 setup(

@@ -65,3 +65,10 @@ export MLFLOW_TRACKING_USERNAME=slackroo
 export MLFLOW_TRACKING_PASSWORD=e383057a1f050e672c874aef175d897f88ad2ea2
 
 ```
+
+### DVC cmd
+1. dvc init
+2. dvc repro
+3. dvc dag
+
+ 

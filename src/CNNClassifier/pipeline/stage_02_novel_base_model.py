@@ -1,6 +1,6 @@
-from CNN_Classifier.config.configuration import ConfigurationManager
-from CNN_Classifier.components.novel_base_model import NovelBaseModel
-from CNN_Classifier import logger
+from CNNClassifier.config.configuration import ConfigurationManager
+from CNNClassifier.components.novel_base_model import NovelBaseModel
+from CNNClassifier import logger
 
 STAGE_NAME = "Novel base model"
 

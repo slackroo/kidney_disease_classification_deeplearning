@@ -1,10 +1,10 @@
 # config work wich needs updation in src configuration.py
-from CNN_Classifier.constants import *
-from CNN_Classifier.utils.common import read_yaml, create_directories, save_json
-from CNN_Classifier.entity.config_entity import (DataIngestionConfig,
-                                                 NovelBaseModelConfig,
-                                                 TrainingConfig,
-                                                 EvaluationConfig)
+from CNNClassifier.constants import *
+from CNNClassifier.utils.common import read_yaml, create_directories, save_json
+from CNNClassifier.entity.config_entity import (DataIngestionConfig,
+                                                NovelBaseModelConfig,
+                                                TrainingConfig,
+                                                EvaluationConfig)
 import os
 
 os.environ["MLFLOW_TRACKING_URI"]= "https://dagshub.com/slackroo/kidney_disease_classification_deeplearning.mlflow"

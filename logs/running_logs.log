@@ -923,3 +923,80 @@ x=============x]
 [2023-10-09 01:52:40,585: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x=============x]
+[2023-10-09 02:35:29,319: INFO: stage_01_data_ingestion: >>>>>> stage Data_Ingestion_stage started <<<<<<]
+[2023-10-09 02:35:29,322: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-09 02:35:29,325: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 02:35:29,325: INFO: common: created directory at: artifacts]
+[2023-10-09 02:35:29,325: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-09 02:35:29,326: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14wbGb3z9szHwtrMnhAJ1ks-zhO6zHksZ/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-09 02:35:39,399: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/14wbGb3z9szHwtrMnhAJ1ks-zhO6zHksZ/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-09 02:35:40,911: INFO: stage_01_data_ingestion: >>>>>> stage Data_Ingestion_stage completed <<<<<<
+
+x=============x]
+[2023-10-09 02:35:50,844: INFO: stage_02_novel_base_model: >>>>>> stage Novel base model started <<<<<<]
+[2023-10-09 02:35:50,847: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-09 02:35:50,850: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 02:35:50,850: INFO: common: created directory at: artifacts]
+[2023-10-09 02:35:50,850: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-09 02:35:51,339: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-09 02:35:51,632: INFO: stage_02_novel_base_model: >>>>>> stage Novel base model completed <<<<<<
+
+x=============x]
+[2023-10-09 02:35:58,576: INFO: stage_03_model_training: >>>>>> stage TRAINING started <<<<<<]
+[2023-10-09 02:35:58,579: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-09 02:35:58,581: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 02:35:58,582: INFO: common: created directory at: artifacts]
+[2023-10-09 02:35:58,582: INFO: common: created directory at: artifacts/training]
+[2023-10-09 02:43:11,815: INFO: stage_03_model_training: >>>>>> stage TRAINING completed <<<<<<
+
+x=============x]
+[2023-10-09 02:43:22,315: INFO: stage_04_model_evaluation: *******************]
+[2023-10-09 02:43:22,315: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation phase started <<<<<<]
+[2023-10-09 02:43:22,319: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-09 02:43:22,321: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 02:43:22,322: INFO: common: created directory at: artifacts]
+[2023-10-09 02:43:44,612: INFO: common: json file saved at: scores.json]
+[2023-10-09 02:43:44,613: INFO: common: json file saved at: scores.json]
+[2023-10-09 02:43:51,161: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-10-09 02:43:52,202: INFO: builder_impl: Assets written to: /var/folders/6d/ydlrjs7x3_n6lhh19hn27v200000gn/T/tmpzvf5rx35/model/data/model/assets]
+[2023-10-09 02:44:49,822: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation phase completed <<<<<<
+
+x=============x]
+[2023-10-09 02:45:53,838: INFO: stage_03_model_training: >>>>>> stage TRAINING started <<<<<<]
+[2023-10-09 02:45:53,843: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-09 02:45:53,845: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 02:45:53,845: INFO: common: created directory at: artifacts]
+[2023-10-09 02:45:53,846: INFO: common: created directory at: artifacts/training]
+[2023-10-09 02:48:22,292: INFO: stage_03_model_training: >>>>>> stage TRAINING completed <<<<<<
+
+x=============x]
+[2023-10-09 02:48:30,181: INFO: stage_04_model_evaluation: *******************]
+[2023-10-09 02:48:30,181: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation phase started <<<<<<]
+[2023-10-09 02:48:30,184: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-09 02:48:30,187: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-09 02:48:30,187: INFO: common: created directory at: artifacts]
+[2023-10-09 02:48:51,048: INFO: common: json file saved at: scores.json]
+[2023-10-09 02:48:51,048: INFO: common: json file saved at: scores.json]
+[2023-10-09 02:49:06,613: ERROR: stage_04_model_evaluation: API request to endpoint /api/2.0/mlflow/runs/log-batch failed with error code 400 != 200. Response body: '"repo not associated with run"']
+Traceback (most recent call last):
+  File "src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 26, in <module>
+    obj.main()
+  File "src/CNNClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.log_into_mlflow()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/src/CNNClassifier/components/model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    mlflow.log_params(self.config.all_params)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/tracking/fluent.py", line 702, in log_params
+    MlflowClient().log_batch(run_id=run_id, metrics=[], params=params_arr, tags=[])
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/tracking/client.py", line 986, in log_batch
+    self._tracking_client.log_batch(run_id, metrics, params, tags)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/tracking/_tracking_service/client.py", line 389, in log_batch
+    self.store.log_batch(
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/store/tracking/rest_store.py", line 321, in log_batch
+    self._call_endpoint(LogBatch, req_body)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/store/tracking/rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/utils/rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/utils/rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/log-batch failed with error code 400 != 200. Response body: '"repo not associated with run"'

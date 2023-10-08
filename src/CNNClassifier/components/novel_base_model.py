@@ -3,7 +3,7 @@ import os
 import urllib.request as request
 from zipfile import ZipFile
 from pathlib import Path
-from CNN_Classifier.entity.config_entity import NovelBaseModelConfig
+from CNNClassifier.entity.config_entity import NovelBaseModelConfig
 import tensorflow as tf
 
 

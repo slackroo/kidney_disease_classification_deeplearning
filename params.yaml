@@ -2,12 +2,12 @@
 AUGMENTATION: True
 # for imagenet vg16 size is 224,224,3
 IMAGE_SIZE: [224,224,3]
-BATCH_SIZE: 32
+BATCH_SIZE: 4
 #need to remove the original dense layer
 INCLUDE_TOP: False
-EPOCHS: 3
+EPOCHS: 2
 # Only 2 normal and tumor for current run
 CLASSES: 2
 # vg16 is pretrained on imagenet data set and we want the pretrained model
 WEIGHTS: imagenet
-LEARNING_RATE: 0.02
+LEARNING_RATE: 0.01

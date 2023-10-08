@@ -1,6 +1,6 @@
-from CNN_Classifier.config.configuration import ConfigurationManager
-from CNN_Classifier.components.model_evaluation_mlflow import Evaluation
-from CNN_Classifier import logger
+from CNNClassifier.config.configuration import ConfigurationManager
+from CNNClassifier.components.model_evaluation_mlflow import Evaluation
+from CNNClassifier import logger
 
 STAGE_NAME = 'Evaluation phase'
 
