@@ -61,4 +61,4 @@ class NovelBaseModel:
             learning_rate=self.config.param_learning_rate
         )
 
-        self.save_model(path=self.config.update_base_model_path, model=self.full_model)
+        self.save_model(path=self.config.updated_base_model_path, model=self.full_model)
