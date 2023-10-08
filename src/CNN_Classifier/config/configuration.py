@@ -1,8 +1,15 @@
 # config work wich needs updation in src configuration.py
 from CNN_Classifier.constants import *
-from CNN_Classifier.utils.common import read_yaml, create_directories
-from CNN_Classifier.entity.config_entity import DataIngestionConfig, NovelBaseModelConfig, TrainingConfig
+from CNN_Classifier.utils.common import read_yaml, create_directories, save_json
+from CNN_Classifier.entity.config_entity import (DataIngestionConfig,
+                                                 NovelBaseModelConfig,
+                                                 TrainingConfig,
+                                                 EvaluationConfig)
 import os
+
+os.environ["MLFLOW_TRACKING_URI"]= "https://dagshub.com/slackroo/kidney_disease_classification_deeplearning.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="slackroo"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="e383057a1f050e672c874aef175d897f88ad2ea2"
 
 class ConfigurationManager:
     def __init__(
@@ -67,3 +74,14 @@ class ConfigurationManager:
         )
 
         return training_config
+
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/kidney-ct-scan-image",
+            mlflow_uri="https://dagshub.com/slackroo/kidney_disease_classification_deeplearning.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

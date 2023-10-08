@@ -37,3 +37,31 @@ I am using pycharm, when opening the project select create new virtual environme
 ````bash
 pip install requirements.txt
 ````
+## MLflow
+
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+- [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/slackroo/kidney_disease_classification_deeplearning.mlflow\
+MLFLOW_TRACKING_USERNAME=slackroo\
+MLFLOW_TRACKING_PASSWORD=e383057a1f050e672c874aef175d897f88ad2ea2\
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/slackroo/kidney_disease_classification_deeplearning.mlflow
+
+export MLFLOW_TRACKING_USERNAME=slackroo 
+
+export MLFLOW_TRACKING_PASSWORD=e383057a1f050e672c874aef175d897f88ad2ea2
+
+```
