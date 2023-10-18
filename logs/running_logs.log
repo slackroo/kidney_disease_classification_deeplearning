@@ -1000,3 +1000,13 @@ Traceback (most recent call last):
   File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/mlflow/utils/rest_utils.py", line 213, in verify_rest_response
     raise MlflowException(
 mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/log-batch failed with error code 400 != 200. Response body: '"repo not associated with run"'
+[2023-10-18 17:45:48,385: INFO: stage_04_model_evaluation: *******************]
+[2023-10-18 17:45:48,386: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation phase started <<<<<<]
+[2023-10-18 17:45:48,389: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-10-18 17:45:48,392: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-18 17:45:48,392: INFO: common: created directory at: artifacts]
+[2023-10-18 17:46:12,870: INFO: common: json file saved at: scores.json]
+[2023-10-18 17:46:12,872: INFO: common: json file saved at: scores.json]
+[2023-10-18 17:46:12,872: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation phase completed <<<<<<
+
+x=============x]

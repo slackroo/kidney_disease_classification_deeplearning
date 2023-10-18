@@ -49,6 +49,8 @@ pip install requirements.txt
 ### dagshub
 [dagshub](https://dagshub.com/)
 
+Everytime the project is closed, We need to add the below 3 lines on the terminal to re-establish the connection to dagshub
+
 MLFLOW_TRACKING_URI=https://dagshub.com/slackroo/kidney_disease_classification_deeplearning.mlflow\
 MLFLOW_TRACKING_USERNAME=slackroo\
 MLFLOW_TRACKING_PASSWORD=e383057a1f050e672c874aef175d897f88ad2ea2\
