@@ -1010,3 +1010,306 @@ mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/
 [2023-10-18 17:46:12,872: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation phase completed <<<<<<
 
 x=============x]
+[2023-10-19 17:31:43,662: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2023-10-19 17:31:43,663: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-19 17:31:46,743: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 21, in home
+    return render_template('/templates/index.html')
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /templates/index.html
+[2023-10-19 17:31:46,783: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:31:46] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-10-19 17:31:46,895: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:31:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-10-19 17:31:55,982: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 21, in home
+    return render_template('/templates/index.html')
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /templates/index.html
+[2023-10-19 17:31:55,983: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:31:55] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-10-19 17:31:56,123: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:31:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-10-19 17:33:10,699: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2023-10-19 17:33:10,699: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-19 17:33:15,322: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 21, in home
+    return render_template('/templates/index.html')
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /templates/index.html
+[2023-10-19 17:33:15,356: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:33:15] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-10-19 17:33:25,950: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 21, in home
+    return render_template('/templates/index.html')
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /templates/index.html
+[2023-10-19 17:33:25,951: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:33:25] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-10-19 17:33:27,105: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 21, in home
+    return render_template('/templates/index.html')
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /templates/index.html
+[2023-10-19 17:33:27,106: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:33:27] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-10-19 17:33:27,662: ERROR: app: Exception on / [GET]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 21, in home
+    return render_template('/templates/index.html')
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: /templates/index.html
+[2023-10-19 17:33:27,663: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:33:27] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-10-19 17:34:14,966: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2023-10-19 17:34:14,966: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-19 17:34:19,832: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:34:19] "GET / HTTP/1.1" 200 -]
+[2023-10-19 17:35:47,089: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 35, in predictionRoute
+    result = clAPP.predict()
+AttributeError: 'ClientAPP' object has no attribute 'predict'
+[2023-10-19 17:35:47,105: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:35:47] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-19 17:37:15,076: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2023-10-19 17:37:15,076: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-19 17:37:53,844: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:37:53] "GET / HTTP/1.1" 200 -]
+[2023-10-19 17:38:00,595: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 35, in predictionRoute
+    result = clAPP.predict()
+AttributeError: 'ClientAPP' object has no attribute 'predict'
+[2023-10-19 17:38:00,608: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:38:00] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-19 17:38:43,175: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2023-10-19 17:38:43,175: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-19 17:38:44,924: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:38:44] "GET / HTTP/1.1" 200 -]
+[2023-10-19 17:38:51,036: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 35, in predictionRoute
+    result = clAPP.predict()
+AttributeError: 'ClientAPP' object has no attribute 'predict'
+[2023-10-19 17:38:51,049: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:38:51] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-19 17:43:27,041: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:43:27] "GET / HTTP/1.1" 200 -]
+[2023-10-19 17:43:37,242: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/venv/lib/python3.8/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/slackroo/Data_science/GitHub/kidney_disease_classification_deeplearning/app.py", line 35, in predictionRoute
+    result = clAPP.predict()
+AttributeError: 'ClientAPP' object has no attribute 'predict'
+[2023-10-19 17:43:37,243: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:43:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-19 17:46:06,987: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.7:8080]
+[2023-10-19 17:46:06,987: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-19 17:46:08,470: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:46:08] "GET / HTTP/1.1" 200 -]
+[2023-10-19 17:46:09,850: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:46:09] "GET / HTTP/1.1" 200 -]
+[2023-10-19 17:46:17,315: INFO: _internal: 127.0.0.1 - - [19/Oct/2023 17:46:17] "POST /predict HTTP/1.1" 200 -]

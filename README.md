@@ -73,4 +73,13 @@ export MLFLOW_TRACKING_PASSWORD=e383057a1f050e672c874aef175d897f88ad2ea2
 2. dvc repro
 3. dvc dag
 
+
+### Flask cmd
+To run the flask app I have created a index from bootstrap template 
+We can run  the app with command
+
+````bash
+python app.py
+````
+
  
