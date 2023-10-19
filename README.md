@@ -41,7 +41,7 @@ pip install requirements.txt
 
 - [Documentation](https://mlflow.org/docs/latest/index.html)
 
-- [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
+- [MLflow tutorial](https://www.youtube.com/watch?v=daBTYQP23-A&ab_channel=DagsHub)
 
 ##### cmd
 - mlflow ui
@@ -75,7 +75,7 @@ export MLFLOW_TRACKING_PASSWORD=e383057a1f050e672c874aef175d897f88ad2ea2
 
 
 ### Flask cmd
-To run the flask app I have created a index from bootstrap template 
+To run the flask app I have created a index.html from bootstrap template 
 We can run  the app with command
 
 ````bash
