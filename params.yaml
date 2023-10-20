@@ -5,7 +5,7 @@ IMAGE_SIZE: [224,224,3]
 BATCH_SIZE: 4
 #need to remove the original dense layer
 INCLUDE_TOP: False
-EPOCHS: 2
+EPOCHS: 1
 # Only 2 normal and tumor for current run
 CLASSES: 2
 # vg16 is pretrained on imagenet data set and we want the pretrained model
