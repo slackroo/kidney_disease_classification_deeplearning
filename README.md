@@ -182,3 +182,11 @@ Make sure when in configure pasting before the ./run.sh we enter the name of the
     AWS_ECR_LOGIN_URI = 214403614374.dkr.ecr.ap-south-1.amazonaws.com
     
     ECR_REPOSITORY_NAME = kidney
+
+## After hosting on Ec2 instance of large t2 32gb and 8gb ram
+### Flask landing page
+![Image Alt Text](images/start_web.png)
+
+
+### Image prediction
+![Image Alt Text](images/predict_web_ec2.png)
