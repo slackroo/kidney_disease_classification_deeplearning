@@ -69,6 +69,8 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
+        with:
+          mask-password: 'true'
         # This step logs in to Amazon Elastic Container Registry (ECR) for Docker image operations.
 
       - name: Build, tag, and push image to Amazon ECR
@@ -108,6 +110,8 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
+        with:
+          mask-password: 'true'
         # This step logs in to Amazon ECR for Docker image retrieval.
 
 # pull in the latest docker image
