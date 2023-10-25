@@ -127,6 +127,14 @@ DVC
 - EC2 access: It is a virtual machine
 - ECR: Elastic Container registry to save your Docker image in AWS
 
+#### Policies; set permissions with attach policies directly
+
+1. AmazonEC2ContainerRegistryFullAccess
+2. AmazonEC2FullAccess
+
+### with the created user create access key
+- CLI 
+
 #### Description: About the Deployment
 
 1. Build a Docker image of the source code
@@ -135,13 +143,10 @@ DVC
 4. Pull Your image from ECR in EC2
 5. Launch your Docker image in EC2
 
-#### Policies
 
-1. AmazonEC2ContainerRegistryFullAccess
-2. AmazonEC2FullAccess
 
 ### 3. Create ECR repo to store/save Docker image
-- Save the URI: `566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken`
+- Save the URI: 214403614374.dkr.ecr.ap-south-1.amazonaws.com/kidney
 
 ### 4. Create EC2 machine (Ubuntu)
 
@@ -165,13 +170,15 @@ newgrp docker
 
     Go to setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
-
+Make sure when in configure pasting before the ./run.sh we enter the name of the runner as self-hosted
 ### 7. Setup github secrets:
 
     AWS_ACCESS_KEY_ID=
 
     AWS_SECRET_ACCESS_KEY=
 
-    AWS_REGION = us-east-1
+    AWS_REGION = ap-south-1
 
-    AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-so
+    AWS_ECR_LOGIN_URI = 214403614374.dkr.ecr.ap-south-1.amazonaws.com
+    
+    ECR_REPOSITORY_NAME = kidney
