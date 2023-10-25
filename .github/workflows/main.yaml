@@ -116,7 +116,7 @@ jobs:
          docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
         # This step pulls the latest Docker image from Amazon ECR.
 
-# unhash below 3 lines after 1st time intialization of docker
+# unhash below 3 lines after 1st time intialization of docker, this is because there will be no container at the very begining. Second time we need to uncomment the below 3 lines
 #      - name: Stop and remove container if running
 #        run: |
 #          docker ps -q --filter "name=cnncls" | grep -q . && docker stop cnncls && docker rm -fv cnncls
@@ -128,5 +128,5 @@ jobs:
         # This step runs a Docker container using the latest image from Amazon ECR.
 
       - name: Clean previous images and containers
-          run: |
-            docker system prune -
+        run: |
+          docker system prune -f
